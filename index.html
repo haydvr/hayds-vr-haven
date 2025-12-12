@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hayd's VR Haven</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #0d1a33;
+        color: white;
+        text-align: center;
+    }
+
+    header {
+        background: #1e3d7b;
+        padding: 20px;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        font-weight: bold;
+    }
+
+    header a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        background: #2954aa;
+        border-radius: 10px;
+        transition: 0.2s;
+    }
+
+    header a:hover {
+        background: #3b6fd1;
+        transform: scale(1.08);
+    }
+
+    .container {
+        margin-top: 40px;
+        padding: 20px;
+    }
+
+    /* Glow + shake for main VR text */
+    .big-vr {
+        font-size: 70px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        animation: shake 0.35s infinite;
+    }
+
+    .big-vr .red {
+        color: red;
+        font-weight: 900;
+    }
+
+    /* toned down green glow */
+    .big-vr .green {
+        color: #00ff55;
+        text-shadow: 0 0 4px #00ff55, 0 0 8px #00ff55, 0 0 12px #00ff55;
+    }
+
+    /* VR Glasses on A */
+    .vr-a {
+        position: relative;
+        display: inline-block;
+    }
+
+    .vr-a::after {
+        content: "🕶";
+        position: absolute;
+        top: -10px;
+        left: -2px;
+        font-size: 0.8em;
+    }
+
+    .about, .about-loudboard {
+        font-size: 22px;
+        max-width: 800px;
+        margin: 0 auto;
+        line-height: 1.5;
+        margin-top: 30px;
+    }
+
+    .big-sub {
+        font-size: 80px;
+        font-weight: bold;
+        margin-top: 40px;
+        animation: shake 0.35s infinite;
+    }
+
+    @keyframes shake {
+        0% { transform: translate(0); }
+        25% { transform: translate(5px, -5px); }
+        50% { transform: translate(-5px, 5px); }
+        75% { transform: translate(5px, 5px); }
+        100% { transform: translate(-5px, -5px); }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <a href="https://www.youtube.com/@Haydenplaysvr1" target="_blank">🎬 My Channel 🎬</a>
+    <a href="https://haydvr.github.io/no-pc-soundboard/" target="_blank">🔊 Loud-Board 🔊</a>
+    <a href="#about-loudboard">ℹ️ About Loud-Board ℹ️</a>
+</header>
+
+<div class="container">
+
+    <div class="big-vr">
+        <span class="red">I</span> 
+        <span class="green">PL<span class="vr-a">A</span>Y VR</span>
+    </div>
+
+    <p class="about">
+        im just a chill guy espescially when i havent slept for like 2 days and 
+        actually just ran out of craps to give at that point
+    </p>
+
+    <div class="big-sub">
+        PLSSSS SUBSCRIBE
+    </div>
+
+    <p class="about-loudboard" id="about-loudboard">
+        <br><br>
+        <strong>About the Loud-Board:</strong><br><br>
+        the loud-board is a sound board that works with no pc because of 3 words 
+        "EXTREMELY VERY LOUD" — please use headphones or you will wake your neighborhood. 
+        also dont go too loud or you risk breaking whatever speakers your using.
+    </p>
+
+</div>
+
+</body>
+</html>
